@@ -23,16 +23,6 @@ describe('test api', ()=>{
         const data = await productService.getSingleProduct('629a14b4eccdabaeb8673502');
         expect(data).not.toBeNull()
     })
-
-    test('test register',async()=>{
-        const user = await authService.register({
-            userName: "tien",
-            email: "tienluuvan2001@gmail.com",
-            password: "12345678"
-        })
-        expect(user).not.toBeNull();
-    })
-
 })
 
 afterAll(async()=>{
