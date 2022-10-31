@@ -2,7 +2,6 @@ const authService = require('../services/authService');
 
 module.exports = {
     login:async(req,res,next)=>{
-        console.log(req.body)
         try {
             const user = await authService.login(req.body); 
             res.status(200).json(user); 
