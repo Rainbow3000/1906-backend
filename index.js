@@ -14,14 +14,12 @@ const authRouter = require('./src/routers/authRouter')
 const commentRouter = require('./src/routers/commentRouter')
 const orderRouter = require('./src/routers/orderRouter')
 
-
-
 mongoose.connect(process.env.MONGO_URL)
 .then(()=>console.log('db is connected !'))
 .catch(err=>console.log(err))
 
 app.use(express.json()); 
-//PORT
+
 const PORT = process.env.PORT || 5000
 
 
