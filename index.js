@@ -8,11 +8,11 @@ app.use(cors());
 
 const mongoose = require('mongoose'); 
 
-const productRouter = require('./routers/productRouter'); 
-const userRouter = require('./routers/userRouter')
-const authRouter = require('./routers/authRouter')
-const commentRouter = require('./routers/commentRouter')
-const orderRouter = require('./routers/orderRouter')
+const productRouter = require('./src/routers/productRouter'); 
+const userRouter = require('./src/routers/userRouter')
+const authRouter = require('./src/routers/authRouter')
+const commentRouter = require('./src/routers/commentRouter')
+const orderRouter = require('./src/routers/orderRouter')
 
 mongoose.connect(process.env.MONGO_URL)
 .then(()=>console.log('db is connected !'))

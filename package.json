@@ -18,8 +18,8 @@
     "xlsx": "^0.18.5"
   },
   "scripts": {
-    "start": "node ./src/index.js",
-    "test":"jest --watch"
+    "start": "node index.js",
+    "test": "jest --watch"
   },
   "author": "",
   "license": "ISC",
